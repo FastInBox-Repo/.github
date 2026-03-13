@@ -1,23 +1,27 @@
 # FastInBox
 
-Plataforma SaaS white label para nutricionistas venderem marmitas personalizadas aos seus pacientes sem operar cozinha própria.
+FastInBox e a infraestrutura operacional para nutricionistas e clinicas venderem marmitas personalizadas com sua propria marca, de forma organizada, confiavel e escalavel.
 
-## Estrutura inicial
+A plataforma conecta nutricionista, paciente, cozinha e administracao em um unico fluxo. O pedido nasce na prescricao, segue para revisao e pagamento pelo paciente, entra em producao na cozinha e continua com acompanhamento de status e entrega.
 
-- `front`: frontend da experiência white label para clínica, paciente e operação
-- `back`: backend da plataforma, pedidos, pagamentos, fluxo operacional e integrações
+## O que a FastInBox viabiliza
 
-## Fluxo principal do MVP
+- operacao white label para clinicas e consultorios
+- pedidos personalizados por paciente
+- jornada simples de confirmacao e pagamento
+- fluxo integrado entre atendimento, producao e entrega
+- visao centralizada da operacao
 
-- cadastro de nutricionista
-- cadastro de paciente
-- criação de pedido
-- acesso por código ou link único
-- confirmação e pagamento
-- painel da cozinha
-- status de produção e entrega
-- personalização básica white label
+## Para quem
 
-## Posicionamento
+- nutricionistas que querem ampliar receita com uma experiencia profissional
+- clinicas que precisam fortalecer sua marca na jornada do paciente
+- operacoes que buscam padronizacao, previsibilidade e controle
 
-FastInBox centraliza tecnologia, produção e logística para transformar nutricionistas em canais de venda de refeições personalizadas com sua própria marca.
+## Proposta
+
+Menos improviso operacional. Mais clareza para a clinica, mais confianca para o paciente e mais eficiencia para a cozinha.
+
+## Visao
+
+Transformar a venda de alimentacao personalizada em uma operacao premium, simples de escalar e pronta para o dia a dia.
