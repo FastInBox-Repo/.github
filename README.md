@@ -13,6 +13,10 @@
 
 Este repositorio centraliza o perfil publico da organizacao, a documentacao de alto nivel e os arquivos compartilhados da camada GitHub.
 
+Site oficial de documentacao (GitHub Pages):
+
+- [https://fastinbox-repo.github.io/docs/](https://fastinbox-repo.github.io/docs/)
+
 </div>
 
 ---

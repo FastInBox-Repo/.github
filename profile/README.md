@@ -13,6 +13,8 @@
 
 Documentacao principal da organizacao:
 
+- [Site oficial (GitHub Pages)](https://fastinbox-repo.github.io/docs/)
+
 - [Frontend](https://github.com/FastInBox-Repo/front)
 - [Backend](https://github.com/FastInBox-Repo/back)
 - [Guia de Deployment](https://github.com/FastInBox-Repo/.github/blob/main/DEPLOYMENT.md)
@@ -113,3 +115,7 @@ FastInBox-Repo/
 ## Deploy
 
 O guia de deployment da organizacao esta em [`DEPLOYMENT.md`](https://github.com/FastInBox-Repo/.github/blob/main/DEPLOYMENT.md), cobrindo frontend, backend, banco relacional e camada Redis.
+
+Para a apresentacao academica, o link publico oficial da documentacao e:
+
+- [https://fastinbox-repo.github.io/docs/](https://fastinbox-repo.github.io/docs/)
