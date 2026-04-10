@@ -1,55 +1,115 @@
+<div align="center">
+
 # FastInBox
 
-FastInBox e uma plataforma operacional white label criada para estruturar, digitalizar e escalar a venda de marmitas personalizadas entre clinicas, nutricionistas, pacientes e parceiros de producao.
+**Plataforma white label para operacao de marmitas personalizadas**
 
-## 5W
+[![Next.js](https://img.shields.io/badge/Next.js-15.5-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.1-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![NestJS](https://img.shields.io/badge/NestJS-11.0-E0234E?logo=nestjs&logoColor=white)](https://nestjs.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis-Cache-DC382D?logo=redis&logoColor=white)](https://redis.io/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-### What
+Documentacao principal da organizacao:
 
-FastInBox centraliza o fluxo ponta a ponta de alimentacao personalizada em um unico ambiente digital.
+- [Frontend](https://github.com/FastInBox-Repo/front)
+- [Backend](https://github.com/FastInBox-Repo/back)
+- [Guia de Deployment](https://github.com/FastInBox-Repo/.github/blob/main/DEPLOYMENT.md)
 
-- cadastro e gestao de pacientes
-- criacao de pedidos personalizados
-- revisao e pagamento pelo paciente
-- encaminhamento operacional para a cozinha
-- rastreabilidade administrativa, financeira e operacional
+</div>
 
-### Why
+---
 
-O mercado de alimentacao personalizada ainda opera, em muitos casos, com processos fragmentados, comunicacao informal e baixa rastreabilidade.
+## Indice
 
-FastInBox existe para reduzir friccao operacional, elevar a confianca do paciente e dar escala a uma operacao que precisa combinar personalizacao, controle e consistencia de marca.
+- [Visao Geral](#visao-geral)
+- [Stack Tecnologico](#stack-tecnologico)
+- [Estrutura da Organizacao](#estrutura-da-organizacao)
+- [Fluxo Operacional](#fluxo-operacional)
+- [Repositorios Principais](#repositorios-principais)
+- [Deploy](#deploy)
 
-### Who
+---
 
-FastInBox foi desenhada para quatro grupos principais:
+## Visao Geral
 
-- nutricionistas e clinicas que desejam vender com sua propria marca
-- pacientes que precisam de uma jornada clara, confiavel e simples
-- cozinhas parceiras que operam producao e entrega com previsibilidade
-- times administrativos que precisam de governanca sobre usuarios, pedidos, pagamentos e regras operacionais
+FastInBox e uma plataforma full-stack para venda e operacao de marmitas personalizadas em modelo white label, permitindo:
 
-### Where
+- **Nutricionistas e clinicas**: cadastrar pacientes, montar pedidos e operar com sua propria marca
+- **Pacientes**: revisar, confirmar, pagar e acompanhar pedidos com uma jornada clara
+- **Cozinhas parceiras**: receber pedidos pagos, produzir e atualizar o status operacional
+- **Administracao**: monitorar usuarios, pedidos, pagamentos, comissoes e governanca da operacao
 
-A operacao acontece em ambiente web, com experiencia responsiva para desktop, tablet e mobile, conectando:
+---
 
-- clinica ou consultorio
-- paciente final
-- cozinha parceira
-- administracao central da operacao
+## Stack Tecnologico
 
-O modelo prioriza a experiencia white label, mantendo a identidade da clinica em primeiro plano ao longo da jornada do paciente.
+### Frontend
 
-### When
+- **Next.js 15.5** + **React 19.1**
+- **TypeScript**
+- **Tailwind CSS 4**
+- **App Router**
 
-FastInBox foi concebida para suportar a operacao real do dia a dia, desde a criacao do pedido ate a entrega.
+### Backend
 
-No momento, a organizacao esta concentrada na entrega do MVP operacional, com foco em:
+- **NestJS 11**
+- **TypeScript 5.7**
+- **PostgreSQL 17**
+- **Redis**
 
-- autenticacao e acesso por perfil
-- fluxo nutricionista -> paciente -> pagamento -> cozinha
-- governanca inicial de comissoes, status e administracao
+### Organizacao
 
-## Direcao
+- **GitHub Organization** com separacao por repositorio
+- **Repositorio `.github`** para perfil publico e padroes compartilhados
 
-Nossa direcao e transformar a venda de alimentacao personalizada em uma operacao premium, rastreavel e escalavel, sem perder a proximidade e a identidade da clinica na experiencia final.
+---
+
+## Estrutura da Organizacao
+
+```text
+FastInBox-Repo/
+├── .github/
+│   ├── README.md                 # Repositorio de perfil e padroes GitHub
+│   ├── DEPLOYMENT.md             # Guia de deployment do ecossistema
+│   ├── profile/
+│   │   └── README.md             # Perfil publico da organizacao
+│   └── .github/
+│       └── workflows/
+│           └── ci.yml            # CI da documentacao GitHub
+├── front/
+│   ├── app/                      # Rotas com App Router
+│   ├── components/               # Providers e componentes compartilhados
+│   └── src/figma-app/            # Interface e paginas do MVP
+└── back/
+    ├── src/                      # API e regras de negocio
+    ├── test/                     # Testes automatizados
+    └── docker-compose.yml        # Infra local com PostgreSQL e Redis
+```
+
+---
+
+## Fluxo Operacional
+
+1. O nutricionista cadastra o paciente ou inicia um pedido
+2. O pedido e configurado com itens, valores e contexto white label
+3. O sistema disponibiliza o pedido para revisao do paciente
+4. O paciente confirma e segue para pagamento
+5. O pedido pago entra na fila operacional da cozinha
+6. A cozinha atualiza producao e entrega
+7. A administracao acompanha toda a operacao em ambiente centralizado
+
+---
+
+## Repositorios Principais
+
+- [`FastInBox-Repo/front`](https://github.com/FastInBox-Repo/front): aplicacao web em Next.js para as jornadas do MVP
+- [`FastInBox-Repo/back`](https://github.com/FastInBox-Repo/back): API em NestJS para autenticacao, dados e regras operacionais
+- [`FastInBox-Repo/.github`](https://github.com/FastInBox-Repo/.github): perfil da organizacao, documentacao compartilhada e padroes GitHub
+
+---
+
+## Deploy
+
+O guia de deployment da organizacao esta em [`DEPLOYMENT.md`](https://github.com/FastInBox-Repo/.github/blob/main/DEPLOYMENT.md), cobrindo frontend, backend, banco relacional e camada Redis.
