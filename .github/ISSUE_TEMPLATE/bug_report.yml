@@ -1,0 +1,76 @@
+name: "Bug report"
+description: "Reporte um defeito que impacta o fluxo do FastInBox"
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar. Preencha os campos abaixo para facilitar reproducao e correcoes rapidas.
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Repositorio afetado
+      options:
+        - front
+        - back
+        - docs
+        - .github
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Ambiente
+      options:
+        - Producao (Vercel/GitHub Pages)
+        - Homologacao
+        - Local
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Resumo do problema
+      description: O que esta quebrado e qual impacto no usuario.
+      placeholder: Ex.: paciente nao consegue confirmar pedido apos pagamento.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Entrar como ...
+        2. Abrir tela ...
+        3. Clicar em ...
+        4. Ver erro ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidencias
+      description: Logs, stack trace, print, URL e horario do erro.
+      render: shell
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severidade
+      options:
+        - S1 - Critico (fluxo principal bloqueado)
+        - S2 - Alto (impacto forte com workaround)
+        - S3 - Medio (impacto moderado)
+        - S4 - Baixo (melhoria pontual)
+      default: 2
+    validations:
+      required: true

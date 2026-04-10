@@ -26,6 +26,7 @@ Site oficial de documentacao (GitHub Pages):
 - [Visao Geral](#visao-geral)
 - [Repositorios Principais](#repositorios-principais)
 - [Estrutura do GitHub](#estrutura-do-github)
+- [Governanca de Colaboracao](#governanca-de-colaboracao)
 - [Deploy](#deploy)
 - [Perfil Publico](#perfil-publico)
 
@@ -54,14 +55,34 @@ FastInBox-Repo/
 ├── .github/
 │   ├── README.md                 # Repositorio de perfil e padroes compartilhados
 │   ├── DEPLOYMENT.md             # Guia de deployment do ecossistema FastInBox
+│   ├── CONTRIBUTING.md           # Guia de contribuicao da organizacao
+│   ├── CODE_OF_CONDUCT.md        # Codigo de conduta de colaboracao
+│   ├── SECURITY.md               # Politica de seguranca e reportes
 │   ├── profile/
 │   │   └── README.md             # Perfil publico exibido na pagina da organizacao
 │   └── .github/
+│       ├── pull_request_template.md
+│       ├── ISSUE_TEMPLATE/
+│       │   ├── bug_report.yml
+│       │   ├── feature_request.yml
+│       │   ├── technical_task.yml
+│       │   └── config.yml
 │       └── workflows/
 │           └── ci.yml            # CI da documentacao e estrutura GitHub
 ├── front/                        # Aplicacao web em Next.js 15
 └── back/                         # API NestJS 11
 ```
+
+---
+
+## Governanca de Colaboracao
+
+Arquivos de padronizacao foram adicionados para manter trilha profissional de trabalho entre repositorios:
+
+- `CONTRIBUTING.md`: fluxo de contribuicao e convencoes
+- `CODE_OF_CONDUCT.md`: diretrizes de convivencia tecnica
+- `SECURITY.md`: politica de reporte de vulnerabilidades
+- templates de issue e pull request em `.github/`
 
 ---
 

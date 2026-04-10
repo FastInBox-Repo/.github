@@ -1,0 +1,58 @@
+name: "Technical task"
+description: "Crie uma tarefa de engenharia para sprint"
+title: "[TASK] "
+labels:
+  - chore
+body:
+  - type: input
+    id: context
+    attributes:
+      label: Contexto
+      placeholder: Ex.: Sprint 2 - API de pedidos
+    validations:
+      required: true
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Repositorio
+      options:
+        - front
+        - back
+        - docs
+        - .github
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo tecnico
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo
+      description: O que entra e o que nao entra nesta tarefa.
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist de implementacao
+      placeholder: |
+        - [ ] Implementar ...
+        - [ ] Validar ...
+        - [ ] Atualizar docs ...
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definicao de pronto
+      placeholder: |
+        - Build/lint/test sem erros
+        - Revisao concluida
+        - Evidencias anexadas
+    validations:
+      required: true

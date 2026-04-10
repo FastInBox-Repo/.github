@@ -1,0 +1,70 @@
+name: "Feature request"
+description: "Proponha uma melhoria de produto, UX ou operacao"
+title: "[FEATURE] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use este formulario para propostas de funcionalidade alinhadas ao produto FastInBox.
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Repositorio alvo
+      options:
+        - front
+        - back
+        - docs
+        - .github
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: persona
+    attributes:
+      label: Persona principal impactada
+      options:
+        - Nutricionista
+        - Paciente
+        - Cozinha
+        - Administracao
+        - Time interno
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema atual
+      description: Qual dor real essa melhoria resolve.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Solucao proposta
+      description: Descreva a funcionalidade em termos de comportamento.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterios de aceitacao
+      placeholder: |
+        - Dado ... quando ... entao ...
+        - Dado ... quando ... entao ...
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade sugerida
+      options:
+        - P0
+        - P1
+        - P2
+        - P3
+      default: 1
+    validations:
+      required: true

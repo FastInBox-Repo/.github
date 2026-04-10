@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "FastInBox Docs"
+    url: "https://fastinbox-repo.github.io/docs/"
+    about: "Consulte os documentos tecnicos antes de abrir uma issue"
