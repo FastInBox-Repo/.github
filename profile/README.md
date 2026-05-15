@@ -13,8 +13,10 @@
 
 Documentacao principal da organizacao:
 
-- [Site oficial (GitHub Pages)](https://fastinbox-repo.github.io/docs/)
-
+- [Aplicacao publicada (Vercel)](https://fastinbox.vercel.app)
+- [Documentacao completa (GitHub Pages)](https://fastinbox-repo.github.io/docs/)
+- [Documento Projeto Integrador III (PDF)](https://fastinbox-repo.github.io/docs/documents/projeto-integrador-iii-fastinbox.pdf)
+- [Documento PI III no repositorio](https://github.com/FastInBox-Repo/docs/blob/main/documents/projeto-integrador-iii-fastinbox.pdf)
 - [Frontend](https://github.com/FastInBox-Repo/front)
 - [Backend](https://github.com/FastInBox-Repo/back)
 - [Guia de Deployment](https://github.com/FastInBox-Repo/.github/blob/main/DEPLOYMENT.md)
